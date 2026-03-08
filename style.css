@@ -523,6 +523,8 @@ nav {
     justify-content: center;
     align-items: center;
     flex: 1;
+    perspective: 1000px;
+    /* Add perspective for 3D effects */
 }
 
 .menu-visual {
@@ -563,6 +565,18 @@ nav {
 }
 
 .image-frame:hover .hud-image {
+    transform: translateZ(20px) scale(1.05);
+    /* Pop out effect */
+}
+
+.hook-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.image-frame:hover .hook-image {
     transform: translateZ(20px) scale(1.05);
     /* Pop out effect */
 }
