@@ -15,9 +15,19 @@
         <div class="blob blob-1"></div>
         <div class="blob blob-2"></div>
         <div class="blob blob-3"></div>
+        <svg class="wave-container" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <defs>
+                <linearGradient id="wave-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:rgba(90, 155, 159, 0.6);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:rgba(90, 155, 159, 0.1);stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <path class="wave" d="M0,50 Q300,0 600,50 T1200,50 L1200,120 L0,120 Z" />
+            <path class="wave" style="animation-delay: -2s;" d="M0,50 Q300,0 600,50 T1200,50 L1200,120 L0,120 Z" />
+        </svg>
     </div>
     <nav>
-        <a href="#" class="logo">
+        <a href="#hero" class="logo">
             <img src="logo.png" alt="SurMinus Logo" class="nav-logo">
             <span>SurMinus</span>
         </a>
@@ -29,7 +39,7 @@
         <a href="https://github.com/surminusclient1/SurMinus/releases" class="m3-button primary">Download Now</a>
     </nav>
 
-    <header class="hero">
+    <header id="hero" class="hero">
         <div class="container">
             <span class="badge">Hello</span>
             <h1 class="reveal-text">Dominate with Precision.</h1>
