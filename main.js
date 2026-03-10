@@ -38,9 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 3D Tilt effect for HUD image
-    const imageFrame = document.querySelector('.image-frame');
-    if (imageFrame) {
+    // 3D Tilt effect for all images
+    const imageFrames = document.querySelectorAll('.image-frame');
+    imageFrames.forEach(imageFrame => {
         imageFrame.addEventListener('mousemove', (e) => {
             const rect = imageFrame.getBoundingClientRect();
             const x = e.clientX - rect.left;
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         imageFrame.addEventListener('mouseleave', () => {
             imageFrame.style.transform = 'rotateX(0deg) rotateY(0deg) scale(1)';
         });
-    }
+    });
 
     // Smooth scroll for anchors
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
