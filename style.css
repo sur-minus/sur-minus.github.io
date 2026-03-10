@@ -454,6 +454,7 @@ nav {
     background-color: #4a5454;
     border-color: rgba(217, 122, 143, 0.2);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
 }
 
 .card:hover::before {
