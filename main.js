@@ -83,14 +83,14 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             nav.style.height = '70px';
-            nav.style.backgroundColor = 'rgba(25, 28, 28, 0.95)';
-            nav.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.5)';
-            nav.style.borderBottomColor = 'rgba(90, 155, 159, 0.2)';
+            nav.style.backgroundColor = 'rgba(250, 250, 250, 0.95)';
+            nav.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.1)';
+            nav.style.borderBottomColor = 'rgba(217, 122, 143, 0.15)';
         } else {
             nav.style.height = '80px';
-            nav.style.backgroundColor = 'rgba(25, 28, 28, 0.8)';
+            nav.style.backgroundColor = 'rgba(250, 250, 250, 0.8)';
             nav.style.boxShadow = 'none';
-            nav.style.borderBottomColor = 'rgba(255, 255, 255, 0.05)';
+            nav.style.borderBottomColor = 'rgba(217, 122, 143, 0.1)';
         }
     });
 
