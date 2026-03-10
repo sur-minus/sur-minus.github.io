@@ -473,6 +473,17 @@ nav {
     transform: scale(1.2) rotate(5deg);
 }
 
+.card h3,
+.card p {
+    transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--md-sys-color-on-surface);
+}
+
+.card:hover h3,
+.card:hover p {
+    color: #ffffff;
+}
+
 /* Combined Features Row */
 .features-row {
     display: grid;
